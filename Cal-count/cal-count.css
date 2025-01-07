@@ -1,0 +1,135 @@
+:root {
+    --light-grey: #f8f9fa;
+    --dark-blue: #1f2937;
+    --light-blue: #3b82f6;
+    --dark-blue-hover: #2563eb;
+    --light-yellow: #fbbf24;
+    --dark-yellow: #f59e0b;
+    --light-pink: #f87171;
+    --dark-red: #b91c1c;
+    --light-green: #4ade80;
+    --dark-green: #16a34a;
+  }
+  
+  body {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: var(--light-yellow);
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 680px;
+    margin: 20px auto;
+    background-color: var(--dark-blue);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  label,
+  legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--light-blue);
+    border: none;
+    color: var(--light-grey);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--dark-blue-hover);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  input,
+  select {
+    min-height: 36px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--light-grey);
+    font-size: 1em;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: var(--light-blue);
+    box-shadow: 0 0 4px var(--light-blue);
+  }
+  
+  fieldset {
+    border: 2px solid var(--light-grey);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .output {
+    border: 2px solid var(--light-grey);
+    background-color: var(--dark-blue);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .output span {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .surplus {
+    color: var(--light-pink);
+  }
+  
+  .deficit {
+    color: var(--light-green);
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    button {
+      padding: 10px 12px;
+      font-size: 0.9em;
+    }
+  }
+  
